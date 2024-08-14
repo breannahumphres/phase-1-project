@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head> 
+<meta charset = “utf-8”/>
+<title>Random Free Game Generator</title>
+<script defer="" src="./index.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="vt323-regular">Welcome to Random Free Game Generator</h1>
+<h3>Below you can choose a category of game you’re looking for, click submit, and viola! 
+    <br> A free game out there that matches your category will be presented! Feel free to try again until you find a game that suits you! Have fun! </h3>
+<form>
+<label for="category">Choose a category:</label>
+<select required name="category" id="game-category">
+    <option value = "" disabled selected hidden></option>
+  <option value="pvp">PVP</option>
+  <option value="battle-royale">Battle Royale</option>
+  <option value="shooter">Shooter</option>
+  <option value="survival">Survival</option>
+  <option value="sports">Sports</option>
+  <option value="pve">PVE</option>
+  <option value="horror">Horror</option>
+</select> <br><br>
+  <input type="submit" value="Submit"> <br><br>
+  <input type="reset" value="Reset">
+</form><br><br>
+<p id="game-result"> Congrats! You're random free game is: </p>
+</body>
+
+</html>
