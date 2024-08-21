@@ -12,8 +12,8 @@
 <body>
 <h1 class="vt323-regular">Welcome to Random Free Game Generator</h1>
 <h3>Below you can choose a category of game you’re looking for, click submit, and viola! 
-    <br> A free game out there that matches your category will be presented! Feel free to try again until you find a game that suits you! Have fun! </h3>
-<form>
+    <br> A free game out there that matches your category will be presented. Feel free to try again until you find a game that suits you. Have fun! </h3>
+<form id = "generatorForm">
 <label for="category">Choose a category:</label>
 <select required name="category" id="game-category">
     <option value = "" disabled selected hidden></option>
@@ -25,10 +25,45 @@
   <option value="pve">PVE</option>
   <option value="horror">Horror</option>
 </select> <br><br>
-  <input type="submit" value="Submit"> <br><br>
-  <input type="reset" value="Reset">
+  <input id = "submit-button" type="submit" value="Submit"> <br><br>
 </form><br><br>
-<p id="game-result"> Congrats! You're random free game is: </p>
+  <p>Click on the game title for more details or type RESET below to try again! </p>
+  <br>
+  <h3 id = "generatedGame"> </h3>
+  <p id="gameDetails"> </p>
+  <br><br>
+  <form id="reset-text">
+  <p id = "Reset">Do you want to reset the form and try again? If so, type RESET.</p>
+<input id = "reset" type="text" placeholder="Type RESET here">
+</form>
+<br><br>
+<p>Is there a free game you want to submit? Enter the details below!</p>
+<form id = "gameSubmission">
+  <label for="submitting">Submit your free game here:</label><br><br>
+  <label for="title">Title:</label>
+    <input name = "title" type="text" value=""> <br><br> 
+    <label for="thumbnail">Thumbnail:</label>
+    <input name = "thumbnail" type="text" value=""> <br><br>   
+    <label for="shortDescription">Short Description:</label>
+    <input name = "short_description" type="text" value=""> <br><br>   
+    <label for="URL">Game URL:</label>
+    <input name = "game_url" type="text" value=""> <br><br>   
+    <label for="genre">Genre:</label>
+    <input name = "genre" type="text" value=""> <br><br>   
+    <label for="platform">Platform (PC, Xbox, etc.):</label>
+    <input name = "platform" type="text" value=""> <br><br>  
+    <label for="publisher">Publisher:</label>
+    <input name = "publisher" type="text" value=""> <br><br> 
+    <label for="developer">Developer:</label>
+    <input name="developer" type="text" value=""> <br><br> 
+    <label for="releaseDate">Release Date:</label>
+    <input name="release_date" type="date" value=""> <br><br> 
+    <input type="submit" value="Submit" id="newGame"> <br><br>
+  </form><br><br>
+
+<p id = "thanks"></p>
+
+
 </body>
 
 </html>

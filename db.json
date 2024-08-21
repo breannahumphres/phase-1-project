@@ -1,4 +1,5 @@
-[
+{
+  "freeGames": [
     {
       "id": 582,
       "title": "Tarisland",
@@ -5172,5 +5173,18 @@
       "developer": "CipSoft",
       "release_date": "1997-01-07",
       "freetogame_profile_url": "https://www.freetogame.com/tibia"
+    },
+    {
+      "id": "b0c0",
+      "title": "Cat Caretaker",
+      "thumbnail": "",
+      "short_description": "",
+      "game_url": "",
+      "genre": "",
+      "platform": "",
+      "publisher": "",
+      "developer": "",
+      "release_date": ""
     }
   ]
+}
