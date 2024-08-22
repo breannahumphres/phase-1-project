@@ -9,7 +9,6 @@ const submitButton = document.querySelector("#submit-button");
 
 generatorForm.addEventListener("submit", function(event) {
 	event.preventDefault();
-	if (submitButton) { submitButton.disabled = true;}
 	const selectedCategory = generatorForm.value;
 
 fetch("http://localhost:3000/freeGames")
@@ -56,10 +55,7 @@ fetch("http://localhost:3000/freeGames")
 	
 	})
 	.catch(error => console.error(error))
-	.finally(() => {
-		if (submitButton) {
-		submitButton.disabled = false; }
-	});
+	event.target.reset();
 });
 
 resetInput.addEventListener("input", function(){
